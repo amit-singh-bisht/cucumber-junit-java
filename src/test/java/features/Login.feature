@@ -6,7 +6,7 @@ Feature: Junit feature in cucumber - java
   Scenario Outline: wrong username and wrong password
     Given I open browserstack.com
     When I visit sign in page
-    And I enter wrong <username> and correct <password>
+    And I enter <username> and <password>
     Then I should not be able to see my dashboard
 
     Examples: 
@@ -18,7 +18,7 @@ Feature: Junit feature in cucumber - java
   Scenario Outline: wrong username and correct password
     Given I open browserstack.com
     When I visit sign in page
-    And I enter wrong <username> and correct <password>
+    And I enter <username> and <password>
     Then I should not be able to see my dashboard
 
     Examples: 
@@ -30,7 +30,7 @@ Feature: Junit feature in cucumber - java
   Scenario Outline: correct username and wrong password
     Given I open browserstack.com
     When I visit sign in page
-    And I enter wrong <username> and correct <password>
+    And I enter <username> and <password>
     Then I should not be able to see my dashboard
 
     Examples: 
@@ -42,7 +42,7 @@ Feature: Junit feature in cucumber - java
   Scenario Outline: correct username and correct password
     Given I open browserstack.com
     When I visit sign in page
-    And I enter wrong <username> and correct <password>
+    And I enter <username> and <password>
     Then I should not be able to see my dashboard
 
     Examples: 
